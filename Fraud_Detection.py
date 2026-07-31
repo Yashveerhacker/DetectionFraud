@@ -1,9 +1,4 @@
-# ============================================
-# CREDIT CARD FRAUD DETECTION PROJECT
-# ============================================
 
-
-# Import Libraries
 
 import pandas as pd
 import numpy as np
@@ -12,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# Machine Learning Libraries
+
 
 from sklearn.model_selection import train_test_split
 
@@ -23,7 +18,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
 
-# Evaluation Metrics
+
 
 from sklearn.metrics import (
     accuracy_score,
@@ -35,20 +30,17 @@ from sklearn.metrics import (
 )
 
 
-# Handling Imbalanced Data
 
 from imblearn.over_sampling import SMOTE
 
 
-# Save Model
+
 
 import joblib
 
 
 
-# ============================================
-# 1. LOAD DATASET
-# ============================================
+
 
 
 df = pd.read_csv(
@@ -79,17 +71,13 @@ print(df.isnull().sum())
 
 
 
-# ============================================
-# 3. CHECK FRAUD DISTRIBUTION
-# ============================================
-
 
 print("\nClass Distribution:")
 print(df['Class'].value_counts())
 
 
 
-# Visualization
+
 
 plt.figure(figsize=(6,4))
 
